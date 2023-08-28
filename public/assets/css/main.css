@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+h1 {
+  color: #cbdf16;
+}
+
+button {
+  color: #cbdf16;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+}
+
+header {
+  background-color: #cbdf16;
+}
+header nav {
+  display: flex;
+}
+header nav ul {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+header nav ul:hover {
+  background-color: yellow;
+}
+header nav li:hover {
+  background-color: palevioletred;
+}
+header nav li {
+  list-style: none;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+.button {
+  background-color: #0d0de7;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+.button.second_button {
+  background-color: purple;
+}/*# sourceMappingURL=main.css.map */
