@@ -2,26 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
+
+
+// uppgift 1
 
 body{
     background-color: aliceblue;
 }
-
-$base-color: #cbdf16;
-
+$base-color: rgb(59, 192, 154);
 
 h1{
-    color: $base-color;
+  background-color: $base-color;
 }
 
 button{
-    color: $base-color;
-    background-color: #f1f1f1;
-    border-radius: 1rem;
-    
-
+  background-color: $base-color;
+  margin-bottom: 2%;
 }
+
+// uppgift 2
 
 
 header{
@@ -45,30 +47,46 @@ nav {
        
       }
 
-
-  
-      li:hover{
-        background-color: palevioletred;
-      }
-
-      li{
-        list-style: none;
-        display: flex;
-        box-sizing: border-box;
-      }
-    
   }
 
 }
 
 
-  @mixin button {
+// uppgift 3
+
+@mixin kaksmet($bg-color, $text-color, $border-radius){
+
+  // grund recept
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+
+
+  // justera utrifrån muffin
+
+  background-color: $bg-color;
+  color: $text-color;
   border-radius: $border-radius;
-  color: $bg-color;
- 
   
-  }
+
+
+}
+
+.blueberry{
+  @include kaksmet(yellow, blue, 2rem)
+}
+
+.choclate{
+  @include kaksmet(brown, blue, .5rem)
+}
+
+
+.vanilj{
+  @include kaksmet(yellow, blue, .5rem)
+}
+
+
   
+// uppgift 4
 
   @media  (max-width: 768px) {
     p {
@@ -77,14 +95,4 @@ nav {
     }
   }
 
-  .button{
-    background-color: #0d0de7;
-    color: white;
-    padding: 1rem 2rem;
-    margin-top: 2rem;
-    
 
-    &.second_button{
-        background-color: purple;
-    }
-  }

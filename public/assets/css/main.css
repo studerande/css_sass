@@ -9,17 +9,16 @@ body {
 }
 
 h1 {
-  color: #cbdf16;
+  background-color: rgb(59, 192, 154);
 }
 
 button {
-  color: #cbdf16;
-  background-color: #f1f1f1;
-  border-radius: 1rem;
+  background-color: rgb(59, 192, 154);
+  margin-bottom: 2%;
 }
 
 header {
-  background-color: #cbdf16;
+  background-color: rgb(59, 192, 154);
 }
 header nav {
   display: flex;
@@ -35,26 +34,33 @@ header nav ul {
 header nav ul:hover {
   background-color: yellow;
 }
-header nav li:hover {
-  background-color: palevioletred;
+
+.blueberry {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: yellow;
+  color: blue;
+  border-radius: 2rem;
 }
-header nav li {
-  list-style: none;
-  display: flex;
-  box-sizing: border-box;
+
+.choclate {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: brown;
+  color: blue;
+  border-radius: 0.5rem;
+}
+
+.vanilj {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: yellow;
+  color: blue;
+  border-radius: 0.5rem;
 }
 
 @media (max-width: 768px) {
   p {
     font-size: 16px;
   }
-}
-.button {
-  background-color: #0d0de7;
-  color: white;
-  padding: 1rem 2rem;
-  margin-top: 2rem;
-}
-.button.second_button {
-  background-color: purple;
 }/*# sourceMappingURL=main.css.map */
